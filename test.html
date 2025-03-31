@@ -53,6 +53,10 @@ void main() {
     vec2 ts = 0.0001 * u_mouse/u_resolution;
 
     vec3 color = vec3(abs(cos(100.*u_time * st.x)), abs(sin(500.* u_time * ts.y * st.y)), abs(sin(ts.x + st.y)));
+    if (st.x < 0.7){
+        color = vec3(0)
+    }
+
     gl_FragColor = vec4(color,1.0);
 }
 
