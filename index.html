@@ -175,7 +175,6 @@ uniform vec2 u_resolution;
 
 void main() {
     vec2 st = gl_FragCoord.xy/u_resolution;
-    vec2 ts = 0.0001 * u_mouse/u_resolution;
 
     vec3 color = 0.5 * vec3(st.x + 0.3*sin(u_time), st.y + 0.1*cos(0.5 * u_time), abs(cos(st.x + st.y)));
     if (st.x < 0.7) {
