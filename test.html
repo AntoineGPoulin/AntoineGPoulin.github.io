@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!--
+Data for the tab    
+-->    
+<title>Antoine Poulin</title>
+<link rel="icon" type="image/png" href="/images/mr_spooder.png">
+
+<!--
+GLSL code. Source: https://github.com/patriciogonzalezvivo/glslCanvas
+-->
+<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+<!--
+Actual Website    
+-->
+<body>
+<canvas class="glslCanvas" data-fragment="
+
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform vec2 u_mouse;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 st = gl_FragCoord.xy/u_resolution;
+    vec2 ts = 0.0001 * u_mouse/u_resolution;
+
+    vec3 color = vec3(abs(cos(100.*u_time * st.x)), abs(sin(500.* u_time * ts.y * st.y)), abs(sin(ts.x + st.y)));
+    gl_FragColor = vec4(color,1.0);
+}
+
+" width="500" height="500"></canvas>
+
+
+
+</body>
+
+</html>>
