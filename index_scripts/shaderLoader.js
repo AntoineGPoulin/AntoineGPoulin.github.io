@@ -22,5 +22,25 @@ async function loadShader() {
     console.log('Helloagain')
   }
   
+  if (!gl) {
+    console.error("WebGL not supported in this browser.");
+  } else {
+    // For WebGL 1.0 (GLSL 1.10) or WebGL 2.0 (GLSL 3.00), check the version
+    const glVersion = gl.getParameter(gl.VERSION);
+    console.log("WebGL Version:", glVersion);
+  
+    if (gl.getParameter(gl.VERSION).indexOf("WebGL 2.0") !== -1) {
+      console.log("You're using WebGL 2.0, which supports GLSL 3.00.");
+    } else {
+      console.log("You're using WebGL 1.0, which supports GLSL 1.10.");
+    }
+    
+    // Optionally: Check the GLSL version used
+    const glslVersion = gl.getExtension("WEBGL_debug_renderer_info");
+    if (glslVersion) {
+      console.log("GLSL Version:", gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT).precision);
+    }
+  }
+
   // Load the shaders when the page is ready
   window.onload = loadShader;
