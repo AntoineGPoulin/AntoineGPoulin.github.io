@@ -18,7 +18,7 @@ void main() {
 
     if (st.x < 0.65) {
         color = vec3(1.0);  // white
-    } elif (st. x < 0.75) {
+    } else if (st. x < 0.75) {
         color = mix(color, white, 10.*(0.75-0.65))
     }
 
