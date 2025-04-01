@@ -3,42 +3,26 @@
 <html lang="en">
 
 <head>
-<!--
-Data for the tab    
--->    
-<title>Antoine Poulin</title>
-<link rel="icon" type="image/png" href="/images/mr_spooder.png">
+    <!--
+    Data for the tab    
+    -->    
+    <title>Antoine Poulin</title>
+    <link rel="icon" type="image/png" href="/images/mr_spooder.png">
 
-<!--
-Meta data, presumably useless.    
--->
-<meta charset="UTF-8">
-<meta name="description" content="This is my personal webpage! Come to find information about my research, teaching or more.">
-<meta name="author" content="Antoine Poulin">
+    <!--
+    Meta data, presumably useless.    
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my personal webpage! Come to find information about my research, teaching or more.">
+    <meta name="author" content="Antoine Poulin">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+    GLSL code. Source: https://github.com/patriciogonzalezvivo/glslCanvas
+    -->
+    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 </head>
-
-<!--
-GLSL code. Source: https://github.com/patriciogonzalezvivo/glslCanvas
--->
-<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-
-<style>
-    body {
-       height : 100%;
-       width : 100%;
-    }
-    canvas { 
-       display: block;
-       position: fixed;
-       z-index: -1;
-       top: 0;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       height: 100%;
-       width: 100%;
-    }
- </style>
 
 <!--
 Actual Website    
@@ -49,165 +33,125 @@ Actual Website
 Text starting
 -->
 
-<center> <h1> Antoine Poulin </h1> </center>
-<nav>
-<a href="index.html">Main</a>
-<a href="archive.html">Archive</a>  
-</nav>
-<img src="/images/antoi_tree.jpg" alt="Photo of me" width="400" height="400">
+    <center> <h1> Antoine Poulin </h1> </center>
+    <nav>
+    <a href="index.html">Main</a>
+    <a href="archive.html">Archive</a>  
+    </nav>
+    <img src="/images/antoi_tree.jpg" alt="Photo of me" width="400" height="400">
 
 <!--
 Description of myself    
 -->
-<h1> Me, myself and I</h1>
-<p>
-I am a PhD student working with <a href="https://www.math.mcgill.ca/atserunyan/index.html">Anush Tserunyan</a>. I am in Montréal, at McGill University.
-My interests lies in Measured Group Theory, Descriptive Set Theory and Probability.
-</p>
+    <h1> Me, myself and I</h1>
+    <p>
+    I am a PhD student working with <a href="https://www.math.mcgill.ca/atserunyan/index.html">Anush Tserunyan</a>. I am in Montréal, at McGill University.
+    My interests lies in Measured Group Theory, Descriptive Set Theory and Probability.
+    </p>
 
 <!--
 Contact Info  
 -->
-<h1> Contact</h1>
-<p>
-(name)(dot)(surname) (at) mail (dot) mcgill (dot) ca 
-</p>
+    <h1> Contact</h1>
+    <p>
+    (name)(dot)(surname) (at) mail (dot) mcgill (dot) ca 
+    </p>
 
 <!--
 Research Section
 -->
-<h1> Research </h1>
+    <h1> Research </h1>
 
-<ul>
+    <ul>
 
-<li>
-    <b>Exactness and the topology of the space of invariant random equivalence relations
-    : Joint work with Héctor Jardón-Sánchez, <a href= "https://sammellick.github.io/">Sam Mellick</a> and Konrad Wróbel. 2025.
-    <br>[<a href="https://arxiv.org/abs/2502.11622">arXiv</a>, <a href="/pdf/exac.pdf">PDF</a>]
-</li> 
+    <li>
+        <b>Exactness and the topology of the space of invariant random equivalence relations
+        : Joint work with Héctor Jardón-Sánchez, <a href= "https://sammellick.github.io/">Sam Mellick</a> and Konrad Wróbel. 2025.
+        <br>[<a href="https://arxiv.org/abs/2502.11622">arXiv</a>, <a href="/pdf/exac.pdf">PDF</a>]
+    </li> 
 
-<li>
-    <b>Elasticity of free type III actions of free groups
-    : 2024.
-    <br>[<a href="https://arxiv.org/abs/2412.07047">arXiv</a>, <a href="/pdf/elast.pdf">PDF</a>]
-</li>    
+    <li>
+        <b>Elasticity of free type III actions of free groups
+        : 2024.
+        <br>[<a href="https://arxiv.org/abs/2412.07047">arXiv</a>, <a href="/pdf/elast.pdf">PDF</a>]
+    </li>    
 
-<li>
-    <b>Borel Complexity of the Isomorphism Relation of Archimedean Orders in Finitely Generated Groups
-    : 2024.<br> To appear in Proceedings of the AMS.
-    <br>[<a href="https://arxiv.org/abs/2403.11326">arXiv</a>, <a href="/pdf/complexborel.pdf">PDF</a>, , PAMS (TBD)]
-</li>    
+    <li>
+        <b>Borel Complexity of the Isomorphism Relation of Archimedean Orders in Finitely Generated Groups
+        : 2024.<br> To appear in Proceedings of the AMS.
+        <br>[<a href="https://arxiv.org/abs/2403.11326">arXiv</a>, <a href="/pdf/complexborel.pdf">PDF</a>, , PAMS (TBD)]
+    </li>    
 
-<li> 
-    <b>Tree-like graphings, wallings, and median graphings of equivalence relations</b>
-    : Joint work with <a href="https://rynchn.github.io/math/">Ronnie Chen</a>, 
-    <a href="https://generantao.github.io/">Ran Tao</a> 
-    and <a href="https://www.math.mcgill.ca/atserunyan/">Anush Tserunyan</a>. 2023.<br> To appear in Forum of Mathematics, Sigma.
-    <br>[<a href="https://arxiv.org/abs/2308.13010">arXiv</a>, <a href="/pdf/quasitrees.pdf">PDF</a>]
-</li>
+    <li> 
+        <b>Tree-like graphings, wallings, and median graphings of equivalence relations</b>
+        : Joint work with <a href="https://rynchn.github.io/math/">Ronnie Chen</a>, 
+        <a href="https://generantao.github.io/">Ran Tao</a> 
+        and <a href="https://www.math.mcgill.ca/atserunyan/">Anush Tserunyan</a>. 2023.<br> To appear in Forum of Mathematics, Sigma.
+        <br>[<a href="https://arxiv.org/abs/2308.13010">arXiv</a>, <a href="/pdf/quasitrees.pdf">PDF</a>]
+    </li>
 
-<li> 
-    <b>One-ended spanning trees and definable combinatorics</b>
-    : Joint work with <a href="https://sites.google.com/illinois.edu/zomback">Jenna Zomback</a> and <a href="https://sites.google.com/view/matt-bowen/home">Matt Bowen</a>. 2022.
-    <br> Published in the Transactions of the AMS, 2024.
-    <br>[<a href="https://arxiv.org/abs/2210.14300">arXiv</a>, <a href="/pdf/spantree.pdf">PDF</a>, <a href="https://www.ams.org/journals/tran/2024-377-12/S0002-9947-2024-09186-9/">TAMS</a> (TBD)]
-</li>
+    <li> 
+        <b>One-ended spanning trees and definable combinatorics</b>
+        : Joint work with <a href="https://sites.google.com/illinois.edu/zomback">Jenna Zomback</a> and <a href="https://sites.google.com/view/matt-bowen/home">Matt Bowen</a>. 2022.
+        <br> Published in the Transactions of the AMS, 2024.
+        <br>[<a href="https://arxiv.org/abs/2210.14300">arXiv</a>, <a href="/pdf/spantree.pdf">PDF</a>, <a href="https://www.ams.org/journals/tran/2024-377-12/S0002-9947-2024-09186-9/">TAMS</a> (TBD)]
+    </li>
 
-<li>
-    <b>Complexity of the isomorphism of Archimedean orders on Z<sup>2</sup></b>
-    : Master's thesis, supervised by <a href="https://www.math.mcgill.ca/msabok/">Marcin Sabok</a>. 2022.
-    <br>[<a href="/pdf/master.pdf">PDF</a>]
-</li>    
+    <li>
+        <b>Complexity of the isomorphism of Archimedean orders on Z<sup>2</sup></b>
+        : Master's thesis, supervised by <a href="https://www.math.mcgill.ca/msabok/">Marcin Sabok</a>. 2022.
+        <br>[<a href="/pdf/master.pdf">PDF</a>]
+    </li>    
 
-<li>
-    <b>On certain probabilistic properties of polynomials over the ring of p-adic integers</b>
-    : Undergraduate summer research project, supervised by <a href="antoniolei.com">Antonio Lei</a>. 2018.
-    <br> Published in the American Mathematical Monthly, 2020.
-    <br>[<a href="https://arxiv.org/abs/2103.06163">arXiv</a>, <a href="/pdf/probprop.pdf">PDF</a>, <a href="https://www.tandfonline.com/doi/full/10.1080/00029890.2020.1736468?scroll=top&needAccess=true">AMM</a>]
-</li>    
-</ul>
+    <li>
+        <b>On certain probabilistic properties of polynomials over the ring of p-adic integers</b>
+        : Undergraduate summer research project, supervised by <a href="antoniolei.com">Antonio Lei</a>. 2018.
+        <br> Published in the American Mathematical Monthly, 2020.
+        <br>[<a href="https://arxiv.org/abs/2103.06163">arXiv</a>, <a href="/pdf/probprop.pdf">PDF</a>, <a href="https://www.tandfonline.com/doi/full/10.1080/00029890.2020.1736468?scroll=top&needAccess=true">AMM</a>]
+    </li>    
+    </ul>
 
 <!--
 Stuff I find neat
 -->
-<h1> Stuff I find neat </h1>
-<ul>
+    <h1> Stuff I find neat </h1>
+    <ul>
 
-<li>
-<b>Field Play:</b> 
-By <a href="https://www.patreon.com/anvaka">Anvaka</a>, this project allows you to explore vector fields in a whole new way.   
-[<a href="https://anvaka.github.io/fieldplay/?cx=0.37710000000000043&cy=0.47805000000000053&w=36.001000000000005&h=36.001000000000005&dt=0.0009&fo=0.9999998&dp=0.007&cm=3&vf=%2F%2F%20p.x%20and%20p.y%20are%20current%20coordinates%0A%2F%2F%20v.x%20and%20v.y%20is%20a%20velocity%20at%20point%20p%0Avec2%20get_velocity%28vec2%20p%29%20%7B%0A%20%20vec2%20v%20%3D%20vec2%280.%2C%200.%29%3B%0A%0A%20%20%2F%2F%20change%20this%20to%20get%20a%20new%20vector%20field%0A%20%20v.x%20%3D%20cos%28p.x%29%20*%20p.y%20%2B%20p.y%2Fp.x%20%2B%20p.x%20%2B%2010.%20*%20cos%28p.y%29%3B%0A%20%20v.y%20%3D%20cos%28p.y%29%20*%20-p.x%20-%20p.x%20*%20sin%28p.x%29%20-%20p.y%3B%0A%0A%20%20return%20v%3B%0A%7D&code=%2F%2F%20p.x%20and%20p.y%20are%20current%20coordinates%0A%2F%2F%20v.x%20and%20v.y%20is%20a%20velocity%20at%20point%20p%0Avec2%20get_velocity%28vec2%20p%29%20%7B%0A%20%20vec2%20v%20%3D%20vec2%280.%2C%200.%29%3B%0A%0A%20%20%2F%2F%20change%20this%20to%20get%20a%20new%20vector%20field%0A%20%20v.x%20%3D%20cos%28p.x%29%20*%20p.y%20%2B%20p.y%2Fp.x%20%2B%20p.x%20%2B%2010.%20*%20cos%28p.y%29%3B%0A%20%20v.y%20%3D%20cos%28p.y%29%20*%20-p.x%20-%20p.x%20*%20sin%28p.x%29%20-%20p.y%3B%0A%0A%20%20return%20v%3B%0A%7D&pc=30000">
+    <li>
+    <b>Field Play:</b> 
+    By <a href="https://www.patreon.com/anvaka">Anvaka</a>, this project allows you to explore vector fields in a whole new way.   
+    [<a href="https://anvaka.github.io/fieldplay/?cx=0.37710000000000043&cy=0.47805000000000053&w=36.001000000000005&h=36.001000000000005&dt=0.0009&fo=0.9999998&dp=0.007&cm=3&vf=%2F%2F%20p.x%20and%20p.y%20are%20current%20coordinates%0A%2F%2F%20v.x%20and%20v.y%20is%20a%20velocity%20at%20point%20p%0Avec2%20get_velocity%28vec2%20p%29%20%7B%0A%20%20vec2%20v%20%3D%20vec2%280.%2C%200.%29%3B%0A%0A%20%20%2F%2F%20change%20this%20to%20get%20a%20new%20vector%20field%0A%20%20v.x%20%3D%20cos%28p.x%29%20*%20p.y%20%2B%20p.y%2Fp.x%20%2B%20p.x%20%2B%2010.%20*%20cos%28p.y%29%3B%0A%20%20v.y%20%3D%20cos%28p.y%29%20*%20-p.x%20-%20p.x%20*%20sin%28p.x%29%20-%20p.y%3B%0A%0A%20%20return%20v%3B%0A%7D&code=%2F%2F%20p.x%20and%20p.y%20are%20current%20coordinates%0A%2F%2F%20v.x%20and%20v.y%20is%20a%20velocity%20at%20point%20p%0Avec2%20get_velocity%28vec2%20p%29%20%7B%0A%20%20vec2%20v%20%3D%20vec2%280.%2C%200.%29%3B%0A%0A%20%20%2F%2F%20change%20this%20to%20get%20a%20new%20vector%20field%0A%20%20v.x%20%3D%20cos%28p.x%29%20*%20p.y%20%2B%20p.y%2Fp.x%20%2B%20p.x%20%2B%2010.%20*%20cos%28p.y%29%3B%0A%20%20v.y%20%3D%20cos%28p.y%29%20*%20-p.x%20-%20p.x%20*%20sin%28p.x%29%20-%20p.y%3B%0A%0A%20%20return%20v%3B%0A%7D&pc=30000">
+        LINK
+    </a>, CPU Warning]
+    </li>    
+
+    <li>
+    <b>OneZoom:</b> 
+    This is a tree of life, with all (or certainly a lot) species!.   
+    [<a href="https://www.onezoom.org/">
+        LINK
+    </a>]
+    </li>  
+
+    <li>
+    <b>Cohomology Fractals:</b> 
+    Who doesn't like fractals?   
+    [<a href="https://henryseg.github.io/cohomology_fractals/">
     LINK
-</a>, CPU Warning]
-</li>    
+    </a>, CPU Warning]
+    </li>      
 
-<li>
-<b>OneZoom:</b> 
-This is a tree of life, with all (or certainly a lot) species!.   
-[<a href="https://www.onezoom.org/">
-    LINK
-</a>]
-</li>  
-
-<li>
-<b>Cohomology Fractals:</b> 
-Who doesn't like fractals?   
-[<a href="https://henryseg.github.io/cohomology_fractals/">
-LINK
-</a>, CPU Warning]
-</li>      
-
-</ul>
+    </ul>
 
 <!--
 GLSL Flourish
 -->
-<canvas class="glslCanvas" data-fragment="
+    <canvas class="glslCanvas" data-fragment-url="GLSL_Flourish.frag" width="100%" height="100%"></canvas> 
 
-#ifdef GL_ES
-precision highp float;
-#endif
-
-uniform vec2 u_mouse;
-uniform float u_time;
-uniform vec2 u_resolution;
-
-void main() {
-    vec2 st = gl_FragCoord.xy/u_resolution;
-
-    vec3 color = vec3(0.5,0.2,0.6);
-    if (st.x < 0.7) {
-        color = vec3(1.);
-    }
-
-    gl_FragColor = vec4(color,1.0);
-}
-" width="100%" height="100%"></canvas> 
-
-<script>
-    window.onload = function() {
-        const canvas = document.querySelector('canvas');
-        const glsl = new GlslCanvas(canvas);
-        
-        // Fixing canvas resolution based on device pixel ratio
-        function resizeCanvas() {
-            const width = window.innerWidth;
-            const height = window.innerHeight;
-            canvas.width = width * window.devicePixelRatio;
-            canvas.height = height * window.devicePixelRatio;
-
-            // Optional: update canvas CSS to match the resolution
-            canvas.style.width = width + 'px';
-            canvas.style.height = height + 'px';
-
-            glsl.resizeCanvas();
-        }
-
-        // Call the function on window resize
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas(); // Initial resize when page loads
-    }
-</script>
+<!--
+ChatGPT fix to blurry canvas, presumably from some Overflow post somewhere
+-->    
+    <script src="canvas_resizer.js"></script>
 
 </body>
 
