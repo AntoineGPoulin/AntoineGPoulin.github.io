@@ -2,7 +2,7 @@
 
 async function loadShader() {
     // Fetch and resolve the external fragment shader
-    const fragSource = await fetch(index_scripts/'glsl_Flourish.frag').then(res => res.text()).then(resolveLygia);
+    const fragSource = await fetch('glsl_Flourish.frag').then(res => res.text()).then(resolveLygia);
   
     // A basic inline vertex shader
     const vertSource = `
