@@ -17,12 +17,9 @@ void main() {
     float green =voronoise( 80.*st + vec2(norm.y, -norm.x), 1.- ts.x, 0.1);
     float blue = voronoise( 90.*st, ts.y, 0.1);
 	
-    vec3 color;
-    if (st.x < 0.7) {
-        color = vec3(1.0);  
-    } else {
-        color = vec3(0.5 + 0.05*red, 0.25 + 0.05 * green, 0.5 + 0.1*blue);
-    }
 
-    gl_FragColor = vec4(color, 1.0);  
+    float param = clamp( 10.*(st.x - 0.65), 0., 1.);
+    vec3 color = (1. + 0.1*cos(u_time)) *vec3(0.5 + 0.05*red, 0.25 + 0.05 * green, 0.5 + 0.1*blue);
+
+    gl_FragColor = vec4(color, param);  
 }
