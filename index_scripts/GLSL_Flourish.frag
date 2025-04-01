@@ -16,5 +16,5 @@ void main() {
         color = vec3(1.0);  // white
     }
 
-    gl_fragColor = vec4(color, 1.0);  // Set alpha to 1.0 for full opacity
+    gl_FragColor = vec4(color, 1.0);  
 }
