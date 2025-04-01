@@ -5,12 +5,14 @@ async function loadShader() {
     const fragSource = await fetch('index_scripts/GLSL_Flourish.frag').then(res => res.text()).then(resolveLygia);
   
     // A basic inline vertex shader
-    const vertSource = `
-      attribute vec3 position;
-      void main() {
-        gl_Position = vec4(position, 1.0);
-      }
+    const vertexShaderSource = `
+      #version 300 es
+      in vec4 a_position;
+       main() {
+        gl_Position = a_position;
+      } 
     `;
+
     console.log('Hello')
     // Apply the shaders to the canvas
     const canvas = document.querySelector('.glslCanvas');
