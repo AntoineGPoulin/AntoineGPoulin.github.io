@@ -21,7 +21,7 @@
     <!--
     GLSL code. Source: https://github.com/patriciogonzalezvivo/glslCanvas , https://github.com/patriciogonzalezvivo/lygia
     -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/glsl-canvas@1.0.0/dist/GlslCanvas.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
     <script src="https://lygia.xyz/resolve.js"></script>
 
 </head>
@@ -151,9 +151,9 @@ GLSL Flourish
     <canvas class="glslCanvas" width="100%" height="100%"></canvas> 
 
 <!-- 
-ChatGPT code to resolve Lygia dependencies
+ChatGPT code to resolve Lygia dependent
 -->
-    <script type="module" src="index_scripts/shaderLoader.js"></script>
+    <script type="module" src="index_scripts/shaderLoader.js" defer></script>
 
 <!--
 ChatGPT fix to blurry canvas, presumably from some Overflow post somewhere
