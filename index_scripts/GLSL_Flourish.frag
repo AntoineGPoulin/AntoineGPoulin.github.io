@@ -13,7 +13,7 @@ void main() {
     vec2 ts = u_mouse.xy / u_resolution;
 
     float red = voronoise( vec2(23.*st + 0.3*u_time), pow(2., sin(ts.x)), abs(0.5*sin(u_time)));
-    float green = voronoise( vec2(25.*st -0.2*u_time), pow(2., sin(ts.y)), abs(0.3*cos(u_time)));
+    float green = voronoise( vec2(25.*st -0.2*u_time), pow(2., sin(ts.y)), 1 - 0.3*cos(u_time));
     float blue = voronoise( vec2(26.*st +0.5*vec2(u_time, -u_time)), pow(2., cos(ts.x)), abs(0.4*cos(u_time)));
 	
     vec3 color;
