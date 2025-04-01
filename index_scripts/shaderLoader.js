@@ -14,7 +14,7 @@ async function loadShader() {
   
     // Apply the shaders to the canvas
     const canvas = document.querySelector('.glslCanvas');
-    const glsl = new GLSLCanvas(canvas);
+    const glsl = new GlslCanvas(canvas);
     glsl.load(vertSource, fragSource);
   }
   
