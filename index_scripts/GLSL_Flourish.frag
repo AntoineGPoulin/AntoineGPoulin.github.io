@@ -4,10 +4,7 @@
 precision highp float;
 #endif
 
-uniform vec2 u_mouse;
-uniform float u_time;
-uniform vec2 u_resolution;
-
+in vec4 gl_FragCoord; 
 out vec4 fragColor;  // Define output variable
 
 void main() {
