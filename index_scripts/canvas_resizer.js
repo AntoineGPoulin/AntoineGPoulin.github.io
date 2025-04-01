@@ -14,7 +14,7 @@ window.onload = function() {
         canvas.style.width = width + 'px';
         canvas.style.height = height + 'px';
 
-        glsl.resizeCanvas();
+        glsl.resize();
     }
 
     // Call the function on window resize
