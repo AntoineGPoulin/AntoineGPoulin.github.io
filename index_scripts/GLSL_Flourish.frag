@@ -19,7 +19,7 @@ void main() {
     if (st.x < 0.65) {
         color = vec3(1.0);  
     } else if (st. x < 0.75) {
-        color = mix(color, vec3(1.0), 10.*(0.75-0.65))
+        color = mix(color, vec3(1.0), 10.*(0.75-0.65));
     }
 
     gl_FragColor = vec4(color, 1.0);  
