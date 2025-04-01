@@ -5,7 +5,7 @@ async function loadShader() {
     const fragSource = await fetch('index_scripts/GLSL_Flourish.frag').then(res => res.text()).then(resolveLygia);
   
     // A basic inline vertex shader
-    const vertexShaderSource = `
+    const vertSource = `
       #version 300 es
       in vec4 a_position;
        main() {
