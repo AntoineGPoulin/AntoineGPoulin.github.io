@@ -4,16 +4,26 @@
 precision highp float;
 #endif
 
-in vec4 gl_FragCoord; 
-out vec4 fragColor;  // Define output variable
+// Declare uniforms for resolution, time, and mouse position
+uniform vec2 u_mouse;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+// Declare the output variable for the fragment color
+out vec4 fragColor;
 
 void main() {
-    vec2 st = gl_FragCoord.xy / u_resolution; // Use gl_FragCoord to get fragment coordinates
+    // Normalize fragment coordinates (pixel coordinates to range [0, 1])
+    vec2 st = gl_FragCoord.xy / u_resolution;
 
+    // Default color
     vec3 color = vec3(0.5, 0.2, 0.6);
+    
+    // Change color based on x coordinate
     if (st.x < 0.7) {
-        color = vec3(1.0);
+        color = vec3(1.0);  // white
     }
 
-    fragColor = vec4(color, 1.0);  // Output the color to fragColor (not gl_FragColor)
+    // Set the fragment color
+    fragColor = vec4(color, 1.0);  // Set alpha to 1.0 for full opacity
 }
