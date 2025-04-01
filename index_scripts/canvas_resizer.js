@@ -1,3 +1,4 @@
+// canvas_resizer.js given by ChatGPT
 window.onload = function() {
     const canvas = document.querySelector('canvas');
     const glsl = new GlslCanvas(canvas);
