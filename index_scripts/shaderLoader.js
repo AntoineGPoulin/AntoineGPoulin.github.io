@@ -22,6 +22,12 @@ async function loadShader() {
     console.log('Helloagain')
   }
   
+  // Get the canvas element
+  const canvas = document.querySelector('.glslCanvas');
+  
+  // Ensure the canvas is available and the WebGL2 context is created
+  const gl = canvas.getContext('webgl2');
+
   if (!gl) {
     console.error("WebGL not supported in this browser.");
   } else {
