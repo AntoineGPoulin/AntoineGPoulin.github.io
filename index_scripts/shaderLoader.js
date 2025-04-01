@@ -11,11 +11,13 @@ async function loadShader() {
         gl_Position = vec4(position, 1.0);
       }
     `;
-  
+    console.log('Hello')
     // Apply the shaders to the canvas
     const canvas = document.querySelector('.glslCanvas');
     const glsl = new GlslCanvas(canvas);
+    console.log('yo')
     glsl.load(vertSource, fragSource);
+    console.log('Helloagain')
   }
   
   // Load the shaders when the page is ready
