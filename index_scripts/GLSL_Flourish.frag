@@ -12,7 +12,7 @@ void main() {
     vec2 st = 4. * gl_FragCoord.xy / u_resolution - vec2(3,0.);
     vec2 ts = u_mouse.xy / u_resolution;
     
-    vec3 random = voronoi(st *(30.) - 2.* vec2(u_time,0.), ts.y);
+    vec3 random = voronoi(st *(30.) - 2.* vec2(u_time,0.), ts.y + 0.1 *cos(u_time));
 	
     vec3 color;
     float alpha = clamp((st.x - (0.9 - random.x))*abs((st.x - (0.9 - random.y))), 0., 1.);
