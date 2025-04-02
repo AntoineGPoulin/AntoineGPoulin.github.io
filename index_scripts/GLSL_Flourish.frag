@@ -15,7 +15,7 @@ void main() {
     vec3 random = voronoi(st *(30.) - 2.* vec2(u_time,0.), ts.y + 0.3 *cos(u_time));
 	
     vec3 color;
-    float alpha = clamp((st.x - (0.9 - random.x))*abs((st.x - (0.9 - random.y))), 0., 1.);
+    float alpha = clamp((st.x - (0.9 - random.x)), 0., 1.);
     color = vec3(0.3 + 0.3 * (ts.x - 0.5), 0.05 + 0.2 * (0.5 - ts.x), 0.3 + 0.3 * (0.5 - ts.x)) + 0.2 * random;
 
     gl_FragColor = vec4(color, alpha);  
