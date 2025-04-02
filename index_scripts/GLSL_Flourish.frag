@@ -16,7 +16,7 @@ void main() {
 	
     vec3 color;
     float alpha = clamp((st.x - (0.9 - random.x))*abs((st.x - (0.9 - random.y))), 0., 1.);
-    color = vec3(0.4, 0.15, 0.4) + 0.2 * random;
+    color = vec3(0.3, 0.05, 0.3) + 0.2 * random;
 
     
     gl_FragColor = vec4(color, alpha);  
